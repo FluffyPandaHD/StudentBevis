@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentBevis V2</title>
+
+    <!-- MODEL -->
+    <script src="model.js"></script>
+
+    <!-- VIEW -->
+    <script src="/View/ViewForside.js"></script>
+    <script src="/View/ViewBevis.js"></script>
+    <script src="/View/ViewAdmin.js"></script>
+    <script src="/View/ViewAdminLoggin.js"></script>
+
+    <!-- CONTROLLER -->
+    <script src="/Controller/ControllerForside.js"></script>
+    <script src="/Controller/ControllerBevis.js"></script>
+    <script src="/Controller/ControllerAdmin.js"></script>
+    <script src="/Controller/ControllerAdminLoggin.js"></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<div id="app"></div>
+    
+    
+    <script>
+        function updateView(){
+            if (model.app.currentPage == "forside" )Forside();
+            if (model.app.currentPage == "bevis") Bevis();
+            if (model.app.currentPage == "admin") Admin();
+            if (model.app.currentPage == "adminLoggin") AdminLoggin();
+        }
+        updateView();
+
+    </script>
+
+</body>
+</html>

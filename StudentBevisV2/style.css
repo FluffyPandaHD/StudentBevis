@@ -1,0 +1,76 @@
+#headerName{
+    text-align: center;
+}
+.cursorPointer{
+  cursor: pointer;
+}
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    z-index: 9999;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #dd7b11;
+    color: white;
+  }
+
+#imgLogo{
+  width: 300px;
+}
+.main{
+  overflow: visible;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 50px;
+  height: 100%;
+  text-align: center;
+ 
+}
+.main #adminForside{
+  font-size: small;
+}
+
+.footer{
+  background-color: rgb(121, 121, 121);
+  position: relative;
+  top: 50px;  
+  width: 409px;
+}
